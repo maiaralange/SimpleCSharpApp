@@ -7,6 +7,7 @@
         public static void Run()
         {
             Console.WriteLine();
+
             Console.Write("Write the first integer: ");
             int firstValue = ReadValue();
             Console.Write("Write the second integer: ");
@@ -29,6 +30,7 @@
             }
 
             Console.WriteLine($"Average: {(firstValue + secondValue) / 2}");
+
             Console.WriteLine();
         }
 

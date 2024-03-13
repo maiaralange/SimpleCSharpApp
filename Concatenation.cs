@@ -5,6 +5,7 @@
         public static void Run()
         {
             Console.WriteLine();
+
             Console.Write("Write your first name: ");
             var name = Console.ReadLine();
 
@@ -12,6 +13,7 @@
             var lastName = Console.ReadLine();
 
             Console.WriteLine($"Full name: {name} {lastName}");
+
             Console.WriteLine();
         }
     }
