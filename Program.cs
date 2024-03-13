@@ -14,7 +14,7 @@
                 Write("2 - Concatenation");
                 Write("3 - Math operations");
                 Write("4 - Chars");
-                Write("5 - Validate vehicle (Brazil's legislation)");
+                Write("5 - Validate vehicle plate (2018 Brazil regulation)");
                 Write("6 - Today's date");
                 Write("Please type your option: ", false);
                 typedValue = ReadOption();
@@ -33,10 +33,16 @@
                     case 3:
                         MathOperations.Run();
                         break;
+                    case 4:
+                        Chars.Run();
+                        break;
+                    case 5:
+                        ValidateVehiclePlate.Run();
+                        break;
                 }
             } while (typedValue != 0);
 
-            Console.WriteLine("\nProgram end. Please press 'Enter' to exit.");
+            Console.WriteLine("\nProgram ended. Please press 'Enter' to exit.");
             Console.ReadLine();
         }
 
