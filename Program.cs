@@ -15,7 +15,7 @@
                 Write("3 - Math operations");
                 Write("4 - Chars");
                 Write("5 - Validate vehicle plate (2018 Brazil regulation)");
-                Write("6 - Today's date");
+                Write("6 - Current date");
                 Write("Please type your option: ", false);
                 typedValue = ReadOption();
 
@@ -38,6 +38,9 @@
                         break;
                     case 5:
                         ValidateVehiclePlate.Run();
+                        break;
+                    case 6:
+                        CurrentDate.Run();
                         break;
                 }
             } while (typedValue != 0);
