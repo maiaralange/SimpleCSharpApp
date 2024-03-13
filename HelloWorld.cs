@@ -4,6 +4,7 @@
     {
         public static void Run()
         {
+            Console.WriteLine();
             Console.Write("Digite seu nome: ");
             var name = Console.ReadLine();
 

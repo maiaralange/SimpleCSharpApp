@@ -25,6 +25,9 @@
                     case 1:
                         HelloWorld.Run();
                         break;
+                    case 2:
+                        Concatenation.Run();
+                        break;
                 }
             } while (typedValue != 0);
         }
