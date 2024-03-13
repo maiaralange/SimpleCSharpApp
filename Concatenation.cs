@@ -1,6 +1,6 @@
 ﻿namespace BaseNamespace
 {
-    public class Concatenation
+    public static class Concatenation
     {
         public static void Run()
         {

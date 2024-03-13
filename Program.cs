@@ -2,6 +2,8 @@
 {
     class Program
     {
+        private static readonly int DEFAULT_VALUE = 0;
+
         static void Main()
         {
             int typedValue;
@@ -28,8 +30,14 @@
                     case 2:
                         Concatenation.Run();
                         break;
+                    case 3:
+                        MathOperations.Run();
+                        break;
                 }
             } while (typedValue != 0);
+
+            Console.WriteLine("\nFim da operação. Pressione 'Enter' para sair.");
+            Console.ReadLine();
         }
 
         static void Write(string message, bool writeLine = true)
@@ -46,7 +54,13 @@
 
         static int ReadOption()
         {
-            return int.Parse(Console.ReadLine()!);
+            var value = Console.ReadLine();
+            if (!string.IsNullOrEmpty(value))
+            {
+                return int.Parse(value);
+            }
+
+            return DEFAULT_VALUE;
         }
     }
 }
