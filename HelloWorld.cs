@@ -5,10 +5,10 @@
         public static void Run()
         {
             Console.WriteLine();
-            Console.Write("Digite seu nome: ");
+            Console.Write("Write your name: ");
             var name = Console.ReadLine();
 
-            Console.WriteLine($"Olá, {name}! Seja bem-vindo/a!");
+            Console.WriteLine($"Hello, {name}! Welcome!");
             Console.WriteLine();
         }
     }

@@ -7,28 +7,28 @@
         public static void Run()
         {
             Console.WriteLine();
-            Console.Write("Digite o primeiro número inteiro: ");
+            Console.Write("Write the first integer: ");
             int firstValue = ReadValue();
-            Console.Write("Digite o segundo número inteiro: ");
+            Console.Write("Write the second integer: ");
             int secondValue = ReadValue();
 
-            Console.WriteLine($"Valores utilizados: {firstValue} e {secondValue}");
+            Console.WriteLine($"Parsed integers: {firstValue} e {secondValue}");
 
-            Console.WriteLine($"Soma: {firstValue + secondValue}");
-            Console.WriteLine($"Subtração: {firstValue - secondValue}");
-            Console.WriteLine($"Multiplicação: {firstValue * secondValue}");
+            Console.WriteLine($"Sum: {firstValue + secondValue}");
+            Console.WriteLine($"Subtraction: {firstValue - secondValue}");
+            Console.WriteLine($"Multiplication: {firstValue * secondValue}");
 
             if (secondValue != 0)
             {
                 var division = Convert.ToDouble(firstValue) / secondValue;
-                Console.WriteLine($"Divisão: {Math.Round(division, 2)}");
+                Console.WriteLine($"Division: {Math.Round(division, 2)}");
             }
             else
             {
-                Console.WriteLine("Não é possível dividir por 0. Utilize outro número como denominador.");
+                Console.WriteLine("Division by zero is not possible. Please use another number as denominator.");
             }
 
-            Console.WriteLine($"Média: {(firstValue + secondValue) / 2}");
+            Console.WriteLine($"Average: {(firstValue + secondValue) / 2}");
             Console.WriteLine();
         }
 
@@ -40,7 +40,7 @@
                 return int.Parse(value);
             }
 
-            Console.WriteLine("Não foi digitado nenhum número. Usando valor padrão '0'.");
+            Console.WriteLine($"No integer was typed. Using default value {DEFAULT_VALUE}");
             return DEFAULT_VALUE;
         }
     }

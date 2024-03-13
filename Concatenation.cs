@@ -5,13 +5,13 @@
         public static void Run()
         {
             Console.WriteLine();
-            Console.Write("Digite seu primeiro nome: ");
+            Console.Write("Write your first name: ");
             var name = Console.ReadLine();
 
-            Console.Write("Digite seu sobrenome: ");
+            Console.Write("Write your last name: ");
             var lastName = Console.ReadLine();
 
-            Console.WriteLine($"Nome completo: {name} {lastName}");
+            Console.WriteLine($"Full name: {name} {lastName}");
             Console.WriteLine();
         }
     }

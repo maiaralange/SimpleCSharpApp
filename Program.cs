@@ -9,14 +9,14 @@
             int typedValue;
             do
             {
-                Write("0 - Sair");
+                Write("0 - Exit");
                 Write("1 - Hello World");
-                Write("2 - Concatenação");
-                Write("3 - Operações com números");
+                Write("2 - Concatenation");
+                Write("3 - Math operations");
                 Write("4 - Chars");
-                Write("5 - Validação de placa de veículo");
-                Write("6 - Data atual");
-                Write("Digite a opção desejada: ", false);
+                Write("5 - Validate vehicle (Brazil's legislation)");
+                Write("6 - Today's date");
+                Write("Please type your option: ", false);
                 typedValue = ReadOption();
 
                 switch (typedValue)
@@ -36,7 +36,7 @@
                 }
             } while (typedValue != 0);
 
-            Console.WriteLine("\nFim da operação. Pressione 'Enter' para sair.");
+            Console.WriteLine("\nProgram end. Please press 'Enter' to exit.");
             Console.ReadLine();
         }
 
